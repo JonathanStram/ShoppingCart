@@ -15,18 +15,17 @@ const App = () => {
 
   return (
     <div className="App">
-       <div>
-      <button className='button' onClick={handleOpen}>Open Modal</button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <ModalInner handleClose={handleClose} handleOpen={handleOpen}/>
-      </Modal>
-    </div>
-      
+       <div className='flex justify-center h-100 align-center'>
+        <button className='button' onClick={handleOpen}>Open Modal</button>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <ModalInner handleClose={handleClose} handleOpen={handleOpen}/>
+        </Modal>
+      </div>
     </div>
   );
 }
